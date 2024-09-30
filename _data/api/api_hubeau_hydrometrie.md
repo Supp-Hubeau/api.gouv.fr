@@ -29,7 +29,7 @@ stat:
   path:
     - Hydro_last30DaysQueries
 contact_link: newshubeau@brgm.fr
-doc_tech_link: https://hubeau.eaufrance.fr/api/v1/hydrometrie/api-docs
+doc_tech_link: https://hubeau.eaufrance.fr/api/v2/hydrometrie/api-docs
 visits_2019: 801
 last_update: 08/08/2022
 content_intro: |
@@ -50,11 +50,12 @@ Quatre opérations (endpoints) sont disponibles :
 - **sites** : interroge les sites du référentiel hydrométrique ;
 - **stations** : interroge les stations du référentiel hydrométrique constituant les sites ;
 - **obervations_tr** : liste les observations dites "temps réel" portées par le référentiel (sites et stations hydrométriques), à savoir les séries de données de hauteur d'eau (H) et de débit (Q) ; 
-- **obs_elab** : liste 2 types d'observations dites "élaborées" : les débits moyens journaliers (QmJ) ainsi que les débits moyens mensuels (QmM) sur l'ensemble de l'historique disponible.
+- **obs_elab** : liste 2 types d'observations dites "élaborées" : les débits moyens journaliers (QmnJ) ainsi que les débits moyens mensuels (QmM) pour les sites et les stations sur l'ensemble de l'historique disponible.
 
 Les données sont exposées sous la forme d'une API REST, les formats supportés sont : JSON, GeoJSON, CSV et XML SANDRE.
 
 Dernières évolutions de l'API Hydrométrie :
+- 10/10/2024 : Mise en produciton de la version 2
 - 24/11/2021 : Mise à disposition des opérations Observations élaborées (débits moyens journaliers et mensuels) aux formats JSON et CSV.
 - 05/03/2020 : passage sur serveur dédié pour tenir la charge (10 appels/s en moyenne)
 - 03/01/2019 : v1.0.1 : correction [bug sur l'API observations](https://github.com/BRGM/hubeau/issues/15)
